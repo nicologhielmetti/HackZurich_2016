@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hackzurich.android.OBDDeviceActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="none">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_RPM"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/avg_rpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average RPM : -"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_speed"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/avg_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average speed : -"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_altitude"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/text_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altitude : -"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_odo"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/text_odo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odometer : -"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_batt"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/text_batt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battery status : -"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:paddingTop="10dp"/>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    </ScrollView>

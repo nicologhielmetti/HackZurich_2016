@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/consumptions"
+            android:checked="false"
+            android:icon="@drawable/ic_invert_colors_black"
+            android:title="@string/consumptions" />
+
+        <item
+            android:id="@+id/deadlines"
+            android:checked="false"
+            android:icon="@drawable/ic_event_black"
+            android:title="@string/deadlines" />
+
+        <item
+            android:id="@+id/behavior_history"
+            android:checked="false"
+            android:icon="@drawable/ic_history_black"
+            android:title="@string/behavior_history" />
+
+
+        <item
+            android:id="@+id/stats"
+            android:checked="false"
+            android:icon="@drawable/ic_timeline_black"
+            android:title="@string/stats" />
+        <item
+            android:id="@+id/leaderboard"
+            android:checked="false"
+            android:icon="@drawable/ic_poll_black"
+            android:title="@string/leaderboard" />
+
+
+    </group>
+</menu>
